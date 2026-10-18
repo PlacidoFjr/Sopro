@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Sopro",
+    "slug": "sopro-devocional",
+    "scheme": "sopro",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.placidojr.sopro",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.placidojr.sopro",
+      "adaptiveIcon": {
+        "backgroundColor": "#17323D",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      "expo-notifications"
+    ]
+  }
+}
