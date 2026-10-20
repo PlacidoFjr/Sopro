@@ -1,12 +1,12 @@
 # Sopro — devocional diário
 
-Aplicativo iOS em Expo/React Native, em português do Brasil. O app traz um ciclo offline de 366 devocionais matinais de Christ Himself, traduzidos e adaptados para português brasileiro, com perguntas de reflexão e referências para leitura na Bíblia.
+Aplicativo Expo/React Native em português do Brasil, pensado para iOS e com versão web responsiva para uso temporário no navegador. O app traz um ciclo offline de 366 devocionais matinais de Christ Himself, traduzidos e adaptados para português brasileiro, com perguntas de reflexão e referências para leitura na Bíblia.
 
 ## O que já funciona
 
 - Devocional do dia escolhido pela data local, com conteúdo para os 366 dias do ano, incluindo 29 de fevereiro.
 - Tela de leitura com resumo, quatro perguntas de reflexão e referências bíblicas relacionadas.
-- Biblioteca com o ciclo anual e indicação das leituras concluídas.
+- Leitura do dia selecionada automaticamente pelo calendário; o ciclo anual fica nos dados do app sem exibir uma lista de 366 itens.
 - Caderno com uma anotação editável por devocional, salva automaticamente no aparelho.
 - Favoritos e leituras concluídas guardados localmente no aparelho.
 - Lembrete diário local opcional, com horário ajustável e sem conta ou servidor.
@@ -41,6 +41,8 @@ As referências servem para avaliar a estrutura e os padrões de uso; a composi�
 3. Leia o QR code no Expo Go, com os dois dispositivos na mesma rede.
 
 Para abrir a prévia web, use `npm run web`.
+
+Para gerar o site web de produção, rode `npm run build:web`. A saída fica em `dist/` e pode ser publicada em hospedagem estática. No navegador, favoritos, anotações e preferências ficam salvos localmente naquele navegador; eles não sincronizam entre aparelhos. Lembretes diários estão disponíveis apenas no app instalado no iPhone.
 
 ## Conteúdo e atribuição
 

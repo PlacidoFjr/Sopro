@@ -68,7 +68,7 @@ export default function SavedScreen() {
 function createStyles(palette: Palette) {
   return StyleSheet.create({
   screen: { flex: 1, backgroundColor: palette.paper },
-  content: { paddingHorizontal: 27, paddingTop: 15, paddingBottom: 36 },
+  content: { width: '100%', maxWidth: 850, alignSelf: 'center', paddingHorizontal: 27, paddingTop: 15, paddingBottom: 36 },
   brandRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 42 },
   brand: { color: palette.ink, fontSize: 19, fontWeight: '700', letterSpacing: -0.7 },
   count: { color: palette.muted, fontSize: 12 },

@@ -252,7 +252,7 @@ function JournalEditor({
 function createStyles(palette: Palette) {
   return StyleSheet.create({
   screen: { flex: 1, backgroundColor: palette.paper },
-  content: { paddingHorizontal: 27, paddingTop: 13, paddingBottom: 44 },
+  content: { width: '100%', maxWidth: 850, alignSelf: 'center', paddingHorizontal: 27, paddingTop: 13, paddingBottom: 44 },
   header: { flexDirection: 'row', alignItems: 'center', height: 48, marginBottom: 30 },
   backButton: { width: 44, height: 44, borderRadius: 4, backgroundColor: palette.white, alignItems: 'center', justifyContent: 'center' },
   backArrow: { color: palette.ink, fontSize: 31, lineHeight: 35, marginTop: -3 },
@@ -263,7 +263,7 @@ function createStyles(palette: Palette) {
   labelRow: { flexDirection: 'row', alignItems: 'center', marginBottom: 13 },
   label: { color: palette.plum, fontSize: 13, fontWeight: '600' },
   duration: { color: palette.muted, fontSize: 12, marginLeft: 'auto' },
-  title: { color: palette.ink, fontFamily: 'Georgia', fontSize: 35, lineHeight: 42, letterSpacing: -0.7, maxWidth: 340 },
+  title: { color: palette.ink, fontFamily: 'Georgia', fontSize: 35, lineHeight: 42, letterSpacing: -0.7, maxWidth: 660 },
   reference: { color: palette.moss, fontSize: 14, fontWeight: '600', marginTop: 10, marginBottom: 31 },
   readingBlock: { borderTopWidth: 1, borderBottomWidth: 1, borderColor: palette.line, paddingVertical: 19, marginBottom: 28 },
   sectionLabel: { color: palette.plum, fontSize: 13, fontWeight: '700', marginBottom: 11 },

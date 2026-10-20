@@ -99,7 +99,7 @@ function BranchMark({ large = false, palette, styles }: { large?: boolean; palet
 function createStyles(palette: Palette) {
   return StyleSheet.create({
   screen: { flex: 1, backgroundColor: palette.paper },
-  content: { paddingHorizontal: 27, paddingTop: 13, paddingBottom: 36 },
+  content: { width: '100%', maxWidth: 850, alignSelf: 'center', paddingHorizontal: 27, paddingTop: 13, paddingBottom: 36 },
   topRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 47 },
   brand: { flexDirection: 'row', alignItems: 'center' },
   brandName: { marginLeft: 9, color: palette.ink, fontSize: 19, fontWeight: '700', letterSpacing: -0.7 },
@@ -110,7 +110,7 @@ function createStyles(palette: Palette) {
   readingHeading: { alignItems: 'flex-start' },
   eyebrow: { color: palette.plum, fontSize: 13, fontWeight: '600', marginBottom: 13 },
   title: {
-    maxWidth: 340,
+    maxWidth: 660,
     color: palette.ink,
     fontFamily: 'Georgia',
     fontSize: 37,

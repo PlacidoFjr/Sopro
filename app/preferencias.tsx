@@ -311,7 +311,7 @@ function AppearanceOption({
 function createStyles(palette: Palette) {
  return StyleSheet.create({
   screen: { flex: 1, backgroundColor: palette.paper },
-  content: { paddingHorizontal: 27, paddingTop: 13, paddingBottom: 38 },
+  content: { width: '100%', maxWidth: 760, alignSelf: 'center', paddingHorizontal: 27, paddingTop: 13, paddingBottom: 38 },
   header: { flexDirection: 'row', alignItems: 'center', height: 48, marginBottom: 29 },
   backButton: { width: 44, height: 44, borderRadius: 4, backgroundColor: palette.white, alignItems: 'center', justifyContent: 'center' },
   backArrow: { color: palette.ink, fontSize: 31, lineHeight: 35, marginTop: -3 },
